@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Plants and zombies</h1>
+  Conoce nuestras plantas
+</div>
+<div class="container">
+
+
+  <% @plants.each do |plant| %>
+  <div class="card">
+
+  <%= plant.name %>
+  <%= plant.price %>
+  <%= image_tag (plant.photo) %>
+  </div>
+  <% end %>
+</div>
