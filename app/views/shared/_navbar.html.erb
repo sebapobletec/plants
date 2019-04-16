@@ -9,7 +9,7 @@
       <li class="nav-item dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
           <% if user_signed_in? %>
-            Welcome, <%= current_user.email %>
+            Welcome, <%= current_user.name %>
           <% else %>
             Sign
           <% end %>
