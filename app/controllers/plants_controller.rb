@@ -1,6 +1,7 @@
 class PlantsController < ApplicationController
-  before_action :set_plant, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  #before_action :set_plant, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
+
   # GET /plants
   # GET /plants.json
   def index
